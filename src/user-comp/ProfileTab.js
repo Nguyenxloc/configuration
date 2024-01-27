@@ -3,10 +3,14 @@ import SearchOne from "../component/SearchOne";
 class MainView extends Component {
     render() {
         return (
-            <div className="row g-3 mt-5">
-                <div className="col-md-8">
+            <div className="row g-3 mt-5" >
+                <div className="col-md-8" style={{border:"red solid"}}>
                     <img src="https://i.pinimg.com/1200x/22/db/10/22db102765159b0555b586b38e4e67be.jpg" style={{width:"70px",height:"70px",borderRadius:50}} alt=""/>
-                    <label htmlFor="inputPassword4" className="form-label ms-3"  style={{border:"red solid"}}>
+                    <label htmlFor="inputPassword4" className="form-label" style={{border:"red solid"}}>
+                        NoID
+                        <br/>
+                        NoID
+                        <br/>
                         NoID
                     </label>
                 </div>
