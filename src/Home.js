@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import SideBar from "./component/SideBar";
-import MainView from "./component/MainView";
-import AvtAreaView from "./user-view/AvtAreaView";
-
+import ProfileTab from "./user-comp/ProfileTab";
 class Home extends Component {
     render() {
         return (
-        <div className="d-flex flex-row mb-3">
+        <div className="d-flex flex-row mb-3" style={{backgroundColor:"#f0f4fc"}}>
             <SideBar/>
-            <AvtAreaView/>
+            <ProfileTab/>
         </div>
         );
     }

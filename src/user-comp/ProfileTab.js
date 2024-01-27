@@ -1,59 +1,87 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import SearchOne from "../component/SearchOne";
+import ProfileAvt from "./ProfileAvt";
+import ProfileIndexBar from "./ProfileIndexBar";
+
 class MainView extends Component {
     render() {
         return (
-            <div className="row g-3 mt-5" >
-                <div className="col-md-8" style={{border:"red solid"}}>
-                    <img src="https://i.pinimg.com/1200x/22/db/10/22db102765159b0555b586b38e4e67be.jpg" style={{width:"70px",height:"70px",borderRadius:50}} alt=""/>
-                    <label htmlFor="inputPassword4" className="form-label" style={{border:"red solid"}}>
-                        NoID
-                        <br/>
-                        NoID
-                        <br/>
-                        NoID
-                    </label>
-                </div>
+            <div className="row g-" style={{backgroundColor: "#fffcfc"}}>
                 <div className="col-md-4">
-                    <label htmlFor="inputPassword4" className="form-label">#Graps</label>
-                    <input type="password" className="form-control" id="inputPassword4"/>
+                    <p> 0xec83...a63a</p>
                 </div>
-                <div className="col-12">
-                    <label htmlFor="inputAddress" className="form-label">Address</label>
-                    <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
+                <div className="col-md-8">
+                    <SearchOne/>
                 </div>
-                <div className="col-12">
-                    <label htmlFor="inputAddress2" className="form-label">Address 2</label>
-                    <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+                <hr/>
+                <div className="col-md-12">
+                    <ProfileAvt/>
+                    <br/>
+                    <ProfileIndexBar/>
                 </div>
-                <div className="col-md-6">
-                    <label htmlFor="inputCity" className="form-label">City</label>
-                    <input type="text" className="form-control" id="inputCity"/>
-                </div>
-                <div className="col-md-4">
-                    <label htmlFor="inputState" className="form-label">State</label>
-                    <select id="inputState" className="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div className="col-md-2">
-                    <label htmlFor="inputZip" className="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip"/>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck"/>
-                            <label class="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
+                <div className="card">
+                    <h5 className="card-header"><i className="bi bi-wallet-fill" style={{color:"#fe7192"}}></i>   Wallet</h5>
+                    <div className="card-body">
+                        <table className="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Token</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">USD Value</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>ETH</td>
+                                <td>$2,272</td>
+                                <td>2.2907</td>
+                                <td>$5,206.75</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>ETH</td>
+                                <td>$2,272</td>
+                                <td>2.2907</td>
+                                <td>$5,206.75</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>ETH</td>
+                                <td>$2,272</td>
+                                <td>2.2907</td>
+                                <td>$5,206.75</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>ETH</td>
+                                <td>$2,272</td>
+                                <td>2.2907</td>
+                                <td>$5,206.75</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>ETH</td>
+                                <td>$2,272</td>
+                                <td>2.2907</td>
+                                <td>$5,206.75</td>
+                            </tr>
+                            <tr>
+                                <th> </th>
+                                <td> </td>
+                                <td></td>
+                                <td></td>
+                                <th>Total: x$</th>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                <div className="col-12">
-                    <button type="submit" className="btn btn-primary">Sign in</button>
                 </div>
             </div>
         );
     }
 }
+
 export default MainView;

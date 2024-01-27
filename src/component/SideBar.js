@@ -17,7 +17,7 @@ class SideBar extends Component {
                         },
                     }}
                 >
-                    <p className="ms-3"><strong><i className="bi bi-database-check me-2"></i>CryptoChecker</strong></p>
+                    <p className="ms-3" style={{fontSize:20}}><strong><i className="bi bi-database-check me-2"></i>CryptoChecker</strong></p>
                     <MenuItem active={true} component={<Link to="/" />}><i className="bi bi-house me-2"></i>Home</MenuItem>
                     <MenuItem component={<Link to="/calendar" />}><i className="bi bi-chat-left-dots me-2"></i>Hi</MenuItem>
                     <MenuItem component={<Link to="/e-commerce1" />}><i className="bi bi-cast me-2"></i>Stream</MenuItem>
