@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCardTitle, MDBCardText,MDBCardImage} from 'mdb-react-ui-kit';
 
-export default function ProfileAvt() {
+export default function ProfileAvt({id}) {
     return (
 
                                 <div className="d-flex text-black ms-2">
@@ -14,7 +14,7 @@ export default function ProfileAvt() {
                                     </div>
                                     <div className="flex-grow-1 ms-3 mt-2">
                                         <MDBCardTitle style={{fontSize:16,color:"gray"}}>No ID</MDBCardTitle>
-                                        <MDBCardText style={{fontSize:12,color:"gray"}}>0xec8367d3a595d992974a23a43e51fb749686a63a</MDBCardText>
+                                        <MDBCardText style={{fontSize:12,color:"gray"}}>{id}</MDBCardText>
                                         <MDBCardText style={{fontSize:12,color:"gray"}}>This user has not added a bio yet</MDBCardText>
                                     </div>
                                 </div>
