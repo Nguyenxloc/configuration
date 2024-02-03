@@ -7,6 +7,12 @@ class Home extends Component {
         id: '',
         amount: '',
     };
+
+    setPage(event){
+        console.log("number page = "+ event);
+        this.setState({pageNum:event});
+    }
+
     handleChange(event) {
         const target = event.target;
         const value = target.value;
@@ -34,9 +40,10 @@ class Home extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {bucketOfID: [], item: this.emptyItem};
+        this.state = {bucketOfID: [], item: this.emptyItem, pageNum:1};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.setPage= this.setPage.bind(this);
     }
 
     async componentDidMount() {
@@ -46,8 +53,34 @@ class Home extends Component {
     render() {
         return (
         <div className="d-flex flex-row mb-3" style={{backgroundColor:"#f0f4fc"}}>
-            <SideBar/>
-            <ProfileTab/>
+            <SideBar onClickFunction={this.setPage}/>
+            <div>
+                {(() => {
+                    if (this.state.pageNum===1) {
+                        return (
+                            <ProfileTab/>
+                        )
+                    } else if (this.state.pageNum===2) {
+                        return (
+                            <div>#1Comming soon.....</div>
+                        )
+                    } else if (this.state.pageNum===3) {
+                        return (
+                            <div>#2Comming soon.....</div>
+                        )
+                    }else if (this.state.pageNum===4) {
+                        return (
+                            <div>#3Comming soon.....</div>
+                        )
+                    }
+                    else {
+                        return (
+                            <div>#4Comming soon</div>
+                        )
+                    }
+                })()}
+            </div>
+
         </div>
         );
     }

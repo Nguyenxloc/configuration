@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import ProfileAvt from "./ProfileAvt";
 import ProfileIndexBar from "./ProfileIndexBar";
 import {ethers} from "ethers";
-
 class ProfileTab extends Component {
     emptyItem  = {
         id: '',
@@ -17,6 +16,7 @@ class ProfileTab extends Component {
         item[name] = value;
         this.setState({item});
     }
+
     async addToLst(event) {
         try {
             const provider = new ethers.getDefaultProvider();
@@ -33,13 +33,16 @@ class ProfileTab extends Component {
             console.log(err);
         }
     }
+
     async handleSubmit(event) {
         event.preventDefault();
         this.setState(this.getAll());
     }
+
     async remove(id) {
         this.setState(this.getAll());
     }
+
     constructor(props) {
         super(props);
         this.state = {lstAdrs: [], item: this.emptyItem};
@@ -50,7 +53,6 @@ class ProfileTab extends Component {
 
     async componentDidMount() {
     }
-
 
     render() {
         const {lstAdrs} = this.state;
@@ -74,6 +76,7 @@ class ProfileTab extends Component {
                 </tr>
             });
         }
+
         return (
             <div className="row g-" style={{backgroundColor: "#fffcfc"}}>
                 <div className="col-md-4">
