@@ -3,7 +3,7 @@ class MainView extends Component {
     render() {
         return (
         <div>
-
+            hello world
         </div>
         );
     }

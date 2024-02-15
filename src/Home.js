@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import SideBar from "./component/SideBar";
-import ProfileTab from "./user-comp/ProfileTab";
-import WelcomeTab from "./component/WelcomeTab";
+import ProfileTab from "./pages/WalletPage";
+import WelcomeTab from "./pages/WelcomeTab";
 import {ColorRing} from "react-loader-spinner";
+import { Sidebar } from 'react-pro-sidebar';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 class Home extends Component {
     emptyItem  = {
         id: '',
@@ -46,7 +48,6 @@ class Home extends Component {
             },
             body: JSON.stringify(item),
         });
-        this.setState(this.getAll());
     }
 
     constructor(props) {
@@ -110,7 +111,6 @@ class Home extends Component {
                     }
                 })()}
             </div>
-
         </div>
         );
     }

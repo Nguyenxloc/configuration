@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from 'react';
-
-const BackButton = ({setPage,setWallet}) => {
+import { useNavigate } from 'react-router-dom';
+const BackButton = ({url}) => {
+    const navigate = useNavigate();
     const [buttonStyle, setButtonStyle] = useState({
         backgroundColor: '#fffcfc',
         cursor: 'pointer',
@@ -11,20 +12,20 @@ const BackButton = ({setPage,setWallet}) => {
         border:'none',
         textAlign: 'center',
         lineHeight:"10px"
-
     });
+
+    const routeTo = (path) => {
+        navigate(`${path.toLowerCase()}`);
+    };
+    
     const setter = useCallback(() => {
-        // Your function logic here
-        setPage(1);
-        setWallet(false);
+        routeTo(url);        
     }, []);
     const handleMouseEnter = () => {
         setButtonStyle({
             ...buttonStyle,
             backgroundColor: '#eff3f8',
         });
-        // this.setPage(1);
-        // this.setWallet(false);
     };
 
     const handleMouseLeave = () => {
