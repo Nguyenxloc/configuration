@@ -1,6 +1,8 @@
 
 import App324 from "configuration/324/App324";
+import App324plainText from "configuration/324/App324plainText";
 import AppConfig from "configuration/appConfig/AppConfig";
+import AppConfigPlainText from "configuration/appConfig/AppConfigPlainText";
 import Env from "configuration/env/Env";
 import HsNetworkList from "configuration/hsNetworkList/HsNetworkList";
 import ListDapp from "configuration/listDapp/ListDapp";
@@ -13,6 +15,8 @@ export default function RightSide() {
         <div className="w-7/12">
             <Routes>
                 <Route path="/configuration/app-config" element={<AppConfig />}></Route>
+                <Route path="/configuration/app-config-plaintext" element={<AppConfigPlainText />}></Route>
+                <Route path="/configuration/app-324-plaintext" element={<App324plainText/>}></Route>
                 <Route path="/configuration/app-324" element={<App324 />}></Route>
                 <Route path="/configuration/env" element={<Env />}></Route>
                 <Route path="/configuration/list-dapp" element={<ListDapp />}></Route>

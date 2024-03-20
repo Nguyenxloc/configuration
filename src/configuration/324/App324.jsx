@@ -81,6 +81,8 @@ export default function App324() {
     if(isLoading){
         return (
             <div>
+                <div className="flex flex-nowrap">
+                <div>
                 <p className="text-start">App 324</p>
                 <p className="text-start">wssPriceUrl: {wssPriceUrl}</p>
                 <p className="text-start">refBaseUrl: {refBaseUrl}</p>
@@ -95,7 +97,12 @@ export default function App324() {
                 <p className="text-start">liquidPercent:{liquidPercent}</p>
                 <p className="text-start">percentGas:{percentGas} </p>
                 <p className="text-start">maxGasLimitDex:{maxGasLimitDex}</p>
+                </div>
+                <a rel="stylesheet" href="/configuration/app-324-plaintext">Plain text</a>
+                </div>
                 
+      
+                <div className="flex flex-nowrap">
                 <table>
                     <h1><strong> Available list spending</strong></h1>
                     <tr>
@@ -115,7 +122,9 @@ export default function App324() {
                         )
                     }
                 </table>
-
+                
+                </div>
+            
                 <p>IsFullListTokenSpending: {isFullListTokenSpending?"true":"false"}</p>
                 <table>
                     <h1><strong>ChainID</strong></h1>

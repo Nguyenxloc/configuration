@@ -1,7 +1,5 @@
 import { findByDisplayValue } from "@testing-library/react";
 import React, { useEffect, useState } from "react";
-import DappCard from "./DappCard";
-
 export default function ListDappUI() {
     const [data, setData] = useState([]);
     async function getData() {

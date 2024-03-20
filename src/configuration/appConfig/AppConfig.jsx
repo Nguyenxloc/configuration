@@ -81,9 +81,9 @@ export default function AppConfig() {
     return (
         <div>
             <h1><strong>https://static.holdstation.com/wallet-configs/AppConfig.json</strong></h1>
-            <div>
-                <h1 className="text-start mt-3"><strong>Wallet connect Aa Allow Domain</strong></h1>
+            <div className="flex flex-nowrap">
                 <table>
+                <h1 className="text-start mt-3"><strong>Wallet connect Aa Allow Domain</strong></h1>
                     <tr>
                         <th className="border border-slate-600">Index</th>
                         <th className="border border-slate-600">Http</th>
@@ -97,6 +97,7 @@ export default function AppConfig() {
                         )
                     })}
                 </table>
+                <a rel="stylesheet" href="/configuration/app-config-plaintext">Plain text</a>
             </div>
 
             <div>
