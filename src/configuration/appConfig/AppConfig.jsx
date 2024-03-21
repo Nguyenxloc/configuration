@@ -206,6 +206,7 @@ export default function AppConfig() {
                         <td className="border border-slate-600">{airdrop ? "True" : "False"}</td>
                         <td className="border border-slate-600">{kyberSwapEnable ? "True" : "False"}</td>
                     </tr>
+
                     <tr>
                         <th className="border border-slate-600">buyHold</th>
                         <th className="border border-slate-600">dailyQuest</th>
@@ -213,7 +214,6 @@ export default function AppConfig() {
                         <th className="border border-slate-600">zkWaveSummary</th>
                         <th className="border border-slate-600">balanceManta</th>
                         <th className="border border-slate-600">resetPin</th>
-
                     </tr>
                     <tr>
                         <td className="border border-slate-600">{buyHold ? "True" : "False"}</td>
