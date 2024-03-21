@@ -49,7 +49,7 @@ export default function Env() {
                     <td className="border border-slate-700">{JSON.stringify(data.baseKey)}</td>
                 </tr>
             </table>
-            <button onClick={()=>{handleChangePath("/configuration/env-plaintext")}} ><p className="text-red"><a href="">Plain text</a></p></button>
+            <button onClick={()=>{handleChangePath("/configuration/env-plaintext")}} ><a className="ms-20">Plain text</a></button>
         </div>
     )
 }

@@ -104,7 +104,7 @@ export default function App324() {
                         <p className="text-start">percentGas:{percentGas} </p>
                         <p className="text-start">maxGasLimitDex:{maxGasLimitDex}</p>
                     </div>
-                    <button onClick={()=>{handleChangePath("/configuration/app-324-plaintext")}} ><p className="text-red"><a href="">Plain text</a></p></button>
+                    <button onClick={()=>{handleChangePath("/configuration/app-324-plaintext")}} ><a className="ms-20">Plain text</a></button>
                 </div>
 
 

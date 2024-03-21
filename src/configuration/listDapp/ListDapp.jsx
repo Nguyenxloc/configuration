@@ -1,8 +1,10 @@
 import { findByDisplayValue } from "@testing-library/react";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ListDapp() {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
     async function getData() {
         const res = await fetch("https://static.holdstation.com/wallet-configs/listDapp.json");
         const data = await res.json();
@@ -13,12 +15,14 @@ export default function ListDapp() {
             getData();
         }
     }, [data]);
-    <a rel="stylesheet" href="/configuration/env-plaintext">Plain text</a>
+    const handleChangePath = (path) => {
+        navigate(`${path}`);
+      }
     return (
         <div>
             <div className="flex flex-nowrap">
             <h1><strong>Contracts</strong></h1>  
-            <a href="/configuration/list-dapp-plaintext">Plain text</a>
+             <button onClick={()=>{handleChangePath("/configuration/list-dapp-plaintext")}} ><a className="ms-20">Plain text</a></button>
             </div>
             <table className="border-collapse border border-slate-500">
                 <tr>

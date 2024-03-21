@@ -102,7 +102,7 @@ export default function AppConfig() {
                         )
                     })}
                 </table>
-                <button onClick={()=>{handleChangePath("/configuration/app-config-plaintext")}}> <a href="">plain text</a> </button>
+                <button onClick={()=>{handleChangePath("/configuration/app-config-plaintext")}}> <a className="ms-10">Plain text</a> </button>
             </div>
 
             <div>
