@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function App324() {
-    const [isLoading,setIsLoading] = useState(Boolean);
+    const [isLoading, setIsLoading] = useState(Boolean);
     const [data, setData] = useState([]);
     const [wssPriceUrl, setWssPriceUrl] = useState("-");
     const [wssTrading, setWssTrading] = useState("-");
@@ -22,18 +23,19 @@ export default function App324() {
     const [availableListSpending, setAvailableListSpending] = useState([]);
     const [contractList, setContractList] = useState([]);
     //chain info
-    const [chainId,setChainId] = useState("-");
-    const [chainIdHex,setChainIdHex] = useState("-");
-    const [chainName,setChainName] = useState("-");
+    const [chainId, setChainId] = useState("-");
+    const [chainIdHex, setChainIdHex] = useState("-");
+    const [chainName, setChainName] = useState("-");
     const [nativeCurrency, setNativeCurrency] = useState([]);
     const [nativeName, setNativeName] = useState("-");
     const [nativeSymbol, setNativeSymbol] = useState("-");
     const [nativeDecimals, setNavtiveDecimals] = useState("-");
     const [configName, setConfigName] = useState("-");
-    const [rpcUrls,setRpcUrls] = useState([]);
-    const [blockExplorerUrls,setBlockExplorerUrls] = useState("-");  
-    const [defaultSigningGasLimit,setdefaultSigningGasLimit] = useState("-");
+    const [rpcUrls, setRpcUrls] = useState([]);
+    const [blockExplorerUrls, setBlockExplorerUrls] = useState("-");
+    const [defaultSigningGasLimit, setdefaultSigningGasLimit] = useState("-");
     const [pairInfo, setPairInfo] = useState([]);
+    const navigate = useNavigate();
     async function getData() {
         const res = await fetch("https://static.holdstation.com/wallet-configs/chains/v6/324.json");
         const data = await res.json();
@@ -78,54 +80,58 @@ export default function App324() {
             }
         }
         , [data]);
-    if(isLoading){
+    const handleChangePath = (path) => {
+        navigate(`${path}`);
+    }
+
+    if (isLoading) {
         return (
             <div>
                 <div className="flex flex-nowrap">
-                <div>
-                <p className="text-start">App 324</p>
-                <p className="text-start">wssPriceUrl: {wssPriceUrl}</p>
-                <p className="text-start">refBaseUrl: {refBaseUrl}</p>
-                <p className="text-start">maxPosDai: {maxPosDai}</p>
-                <p className="text-start">minimumGasPaymaster: {minimumGasPaymaster}</p>
-                <p className="text-start">maximumGasPaymaster: {maximumGasPaymaster}</p>
-                <p className="text-start">maxGainP:{maxGainP} </p>
-                <p className="text-start">paymaster: {paymaster ? "true" : "false"}</p>
-                <p className="text-start">maxTradesPerPair: {maxTradesPerPair}</p>
-                <p className="text-start">maxPendingMarketOrders: {maxPendingMarketOrders} </p>
-                <p className="text-start">isDefiScan: {isDefiScan ? "true" : "false"} </p>
-                <p className="text-start">liquidPercent:{liquidPercent}</p>
-                <p className="text-start">percentGas:{percentGas} </p>
-                <p className="text-start">maxGasLimitDex:{maxGasLimitDex}</p>
+                    <div>
+                        <p className="text-start">App 324</p>
+                        <p className="text-start">wssPriceUrl: {wssPriceUrl}</p>
+                        <p className="text-start">refBaseUrl: {refBaseUrl}</p>
+                        <p className="text-start">maxPosDai: {maxPosDai}</p>
+                        <p className="text-start">minimumGasPaymaster: {minimumGasPaymaster}</p>
+                        <p className="text-start">maximumGasPaymaster: {maximumGasPaymaster}</p>
+                        <p className="text-start">maxGainP:{maxGainP} </p>
+                        <p className="text-start">paymaster: {paymaster ? "true" : "false"}</p>
+                        <p className="text-start">maxTradesPerPair: {maxTradesPerPair}</p>
+                        <p className="text-start">maxPendingMarketOrders: {maxPendingMarketOrders} </p>
+                        <p className="text-start">isDefiScan: {isDefiScan ? "true" : "false"} </p>
+                        <p className="text-start">liquidPercent:{liquidPercent}</p>
+                        <p className="text-start">percentGas:{percentGas} </p>
+                        <p className="text-start">maxGasLimitDex:{maxGasLimitDex}</p>
+                    </div>
+                    <button onClick={()=>{handleChangePath("/configuration/app-324-plaintext")}} ><p className="text-red"><a href="">Plain text</a></p></button>
                 </div>
-                <a rel="stylesheet" href="/configuration/app-324-plaintext">Plain text</a>
-                </div>
-                
-      
+
+
                 <div className="flex flex-nowrap">
-                <table>
-                    <h1><strong> Available list spending</strong></h1>
-                    <tr>
-                        <th className="border border-slate-600">Index</th>
-                        <th className="border border-slate-600">addressID</th>
-                    </tr>
-                    {
-                        availableListSpending.map(
-                            (item, index) => {
-                                return (
-                                    <tr>
-                                        <td className="border border-slate-600">{index}</td>
-                                        <td className="border border-slate-600">{item}</td>
-                                    </tr>
-                                )
-                            }
-                        )
-                    }
-                </table>
-                
+                    <table>
+                        <h1><strong> Available list spending</strong></h1>
+                        <tr>
+                            <th className="border border-slate-600">Index</th>
+                            <th className="border border-slate-600">addressID</th>
+                        </tr>
+                        {
+                            availableListSpending.map(
+                                (item, index) => {
+                                    return (
+                                        <tr>
+                                            <td className="border border-slate-600">{index}</td>
+                                            <td className="border border-slate-600">{item}</td>
+                                        </tr>
+                                    )
+                                }
+                            )
+                        }
+                    </table>
+
                 </div>
-            
-                <p>IsFullListTokenSpending: {isFullListTokenSpending?"true":"false"}</p>
+
+                <p>IsFullListTokenSpending: {isFullListTokenSpending ? "true" : "false"}</p>
                 <table>
                     <h1><strong>ChainID</strong></h1>
                     <tr>
@@ -159,14 +165,14 @@ export default function App324() {
                     </tr>
                     {
                         contractList.map(
-                             (item,index)=>{
-                                return(
+                            (item, index) => {
+                                return (
                                     <tr>
-                                       <td className="border border-slate-600">{contractList[index][0]}</td>     
-                                       <td className="border border-slate-600">{contractList[index][1]}</td>     
+                                        <td className="border border-slate-600">{contractList[index][0]}</td>
+                                        <td className="border border-slate-600">{contractList[index][1]}</td>
                                     </tr>
                                 )
-                             }
+                            }
                         )
                     }
                 </table>
@@ -189,30 +195,30 @@ export default function App324() {
                     </tr>
                     {
                         pairInfo.map(
-                             (item,index)=>{
-                                return(
+                            (item, index) => {
+                                return (
                                     <tr>
-                                       <td className="border border-slate-600">{index}</td>     
-                                       <td className="border border-slate-600">{item.name}</td>     
-                                       <td className="border border-slate-600">{item.symbol}</td>     
-                                       <td className="border border-slate-600">{item.decimals}</td>     
-                                       <td className="border border-slate-600"><img className="w-10" src={item.imageUrl} alt="" /> </td>     
-                                       <td className="border border-slate-600">{item.pairIndex}</td>     
-                                       <td className="border border-slate-600">{item.indexPrice}</td>     
-                                       <td className="border border-slate-600">{item.listedDate}</td>     
-                                       <td className="border border-slate-600">{item.decimalsToShow}</td>     
-                                       <td className="border border-slate-600">{item.group}</td>     
-                                       <td className="border border-slate-600">{item.chartName}</td>     
-                                       <td className="border border-slate-600">{item.groupName}</td>     
-                                       <td className="border border-slate-600">{item.maxOpenInterest}</td>     
+                                        <td className="border border-slate-600">{index}</td>
+                                        <td className="border border-slate-600">{item.name}</td>
+                                        <td className="border border-slate-600">{item.symbol}</td>
+                                        <td className="border border-slate-600">{item.decimals}</td>
+                                        <td className="border border-slate-600"><img className="w-10" src={item.imageUrl} alt="" /> </td>
+                                        <td className="border border-slate-600">{item.pairIndex}</td>
+                                        <td className="border border-slate-600">{item.indexPrice}</td>
+                                        <td className="border border-slate-600">{item.listedDate}</td>
+                                        <td className="border border-slate-600">{item.decimalsToShow}</td>
+                                        <td className="border border-slate-600">{item.group}</td>
+                                        <td className="border border-slate-600">{item.chartName}</td>
+                                        <td className="border border-slate-600">{item.groupName}</td>
+                                        <td className="border border-slate-600">{item.maxOpenInterest}</td>
                                     </tr>
                                 )
-                             }
+                            }
                         )
                     }
                 </table>
             </div>
         )
     }
-    
+
 }

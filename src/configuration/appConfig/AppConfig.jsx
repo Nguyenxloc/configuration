@@ -1,5 +1,6 @@
 import { toBeEmpty } from "@testing-library/jest-dom/dist/matchers";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AppConfig() {
     //object mng
@@ -35,6 +36,7 @@ export default function AppConfig() {
     const [balanceManta, setBalanceManta] = useState(false);
     const [resetPin, setResetPin] = useState(false);
     const [notificationChest, setNotificationChest] = useState(false);
+    const navigate = useNavigate();
     //sliderImages
     const [sliderImages, setsliderImages] = useState([]);
     async function getData() {
@@ -78,6 +80,9 @@ export default function AppConfig() {
             getData();
         }
     }, [data]);
+    const handleChangePath = (path) => {
+        navigate(`${path}`);
+    }
     return (
         <div>
             <h1><strong>https://static.holdstation.com/wallet-configs/AppConfig.json</strong></h1>
@@ -97,7 +102,7 @@ export default function AppConfig() {
                         )
                     })}
                 </table>
-                <a rel="stylesheet" href="/configuration/app-config-plaintext">Plain text</a>
+                <button onClick={()=>{handleChangePath("/configuration/app-config-plaintext")}}> <a href="">plain text</a> </button>
             </div>
 
             <div>

@@ -7,6 +7,7 @@ export default function ListDappUI() {
         const data = await res.json();
         setData(data);
     }
+    
     useEffect(() => {
         if (data.length == 0) {
             getData();

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useActionData } from "react-router-dom";
+import { useActionData, useNavigate } from "react-router-dom";
 
 export default function Env() {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
     async function getData() {
         const res = await fetch("https://static.holdstation.com/wallet-configs/env.json");
         const data = await res.json();
@@ -15,6 +16,9 @@ export default function Env() {
     }
         , [data]);
 
+        const handleChangePath = (path) => {
+            navigate(`${path}`);
+        }
     return (
         <div>
             <table className="border-collapse border border-slate-500">
@@ -45,7 +49,7 @@ export default function Env() {
                     <td className="border border-slate-700">{JSON.stringify(data.baseKey)}</td>
                 </tr>
             </table>
-            <a rel="stylesheet" href="/configuration/env-plaintext">Plain text</a>
+            <button onClick={()=>{handleChangePath("/configuration/env-plaintext")}} ><p className="text-red"><a href="">Plain text</a></p></button>
         </div>
     )
 }
