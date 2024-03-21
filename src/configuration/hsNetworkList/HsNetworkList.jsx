@@ -14,8 +14,12 @@ export default function HsNetworkList(){
       }
     )
     return(
-      <table>
-      <h1><strong>HS network</strong></h1>
+      <div>
+      <div className="flex flex-nowrap">
+        <p>Hs network</p>
+        <a className="ms-20" href="/configuration/hs-network-list-plaintext">Plain text</a>
+      </div>
+              <table>
       <tr>
           <th className="border border-slate-600">Index</th>
           <th className="border border-slate-600">ChainId</th>
@@ -63,16 +67,9 @@ export default function HsNetworkList(){
                   )
                }
           )
-
-          //testing
-          // data.map(
-          //   (item,index)=>{
-          //     return(
-          //        <p>{item.coinGeckoId}</p>
-          //     )
-          //   }
-          // )
       }
   </table>   
+      </div>
+
     );
 }

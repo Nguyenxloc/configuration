@@ -17,8 +17,8 @@ export default function Env() {
 
     return (
         <div>
-            <h1><strong>Env</strong></h1>
             <table className="border-collapse border border-slate-500">
+            <h1><strong>Env</strong></h1>
                 <tr>
                     <th className="border border-slate-600">Index</th>
                     <th className="border border-slate-600">covalentApiKey</th>
@@ -45,6 +45,7 @@ export default function Env() {
                     <td className="border border-slate-700">{JSON.stringify(data.baseKey)}</td>
                 </tr>
             </table>
+            <a rel="stylesheet" href="/configuration/env-plaintext">Plain text</a>
         </div>
     )
 }

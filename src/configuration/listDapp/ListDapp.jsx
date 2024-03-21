@@ -13,10 +13,13 @@ export default function ListDapp() {
             getData();
         }
     }, [data]);
-
+    <a rel="stylesheet" href="/configuration/env-plaintext">Plain text</a>
     return (
         <div>
-            <h1><strong>Contracts</strong></h1>
+            <div className="flex flex-nowrap">
+            <h1><strong>Contracts</strong></h1>  
+            <a href="/configuration/list-dapp-plaintext">Plain text</a>
+            </div>
             <table className="border-collapse border border-slate-500">
                 <tr>
                     <th className="border border-slate-600">Index</th>
