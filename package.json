@@ -1,6 +1,6 @@
 {
-  "homepage": "https://nguyenxloc.github.io/crypto-checker",
-  "name": "crypto-checker",
+  "homepage": "https://nguyenxloc.github.io/configuration",
+  "name": "configuration",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

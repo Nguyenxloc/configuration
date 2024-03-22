@@ -2,6 +2,7 @@
 import App324 from "configuration/324/App324";
 import App324plainText from "configuration/324/App324plainText";
 import HoldPaidAcross from "configuration/HoldPaidAcross/HoldPaidAcross";
+import HoldstationViewer from "configuration/Holdstation/HoldstationViewer";
 import Accessible from "configuration/accesible-mobile/Accesible";
 import AppConfig from "configuration/appConfig/AppConfig";
 import AppConfigPlainText from "configuration/appConfig/AppConfigPlainText";
@@ -37,6 +38,7 @@ export default function RightSide() {
                 <Route path="/configuration/pair-info" element={<PairInfo/>}></Route>
                 <Route path="/configuration/accessible-mobile" element={<Accessible/>}></Route>
                 <Route path="/configuration/hold-paid-across" element={<HoldPaidAcross/>}></Route>
+                <Route path="/configuration/hold-station" element={<HoldstationViewer/>}></Route>
             </Routes>
         </div>
     )

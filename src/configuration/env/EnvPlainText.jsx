@@ -19,12 +19,13 @@ export default function App324plainText() {
         }
     )
     return (
-        <pre className="bg-black w-fit">
-            <p className="text-white text-start">{dataString}</p>
-            <p></p>
-            <button onClick={() => { navigator.clipboard.writeText(dataString) }} className="bg-pink-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <pre className="w-fit flex">
+            <p className="text-start">{dataString}</p>
+            <div>
+            <button onClick={() => { navigator.clipboard.writeText(dataString) }} className="bg-pink-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">
                 <p className="text-xl">Copy</p>
             </button>
+            </div>
         </pre>
     );
 }
