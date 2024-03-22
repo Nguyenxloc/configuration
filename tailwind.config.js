@@ -42,6 +42,8 @@ export default {
       white: "#fff",
       purple: "#B9A9FB",
       yellow: "#DBFF73",
+      green: "#38F24A",
+      green2: "#BCE6EC",
       transparent3: "rgba(0, 0, 0, 0.60)",
       transparent10: "rgba(255, 255, 255, 0.10)",
       primary_red: "#EB5252",

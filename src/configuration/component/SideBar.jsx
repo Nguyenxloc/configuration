@@ -13,7 +13,8 @@ export default function SideBar() {
     const menuItem = ([{ link: "app-config", name: "App config"}, { link: "app-324", name: "324"}, { link: "env", name: "evn"},
     { link: "list-dapp", name: "List Dapp"}, { link: "hs-network-list", name: "hs-network-list"}, {link: "app-config-ui",name: "App config UI"},
     {link: "app-324-ui",name: "App 324 UI"},{link:"env-ui", name:"Env UnI"},{link:"list-dapp-ui", name: "List app UI"},
-    {link:"hs-network-list-ui",name:"Hs network list UI"},{link:"pair-info",name: "Pair info"} ]);
+    {link:"hs-network-list-ui",name:"Hs network list UI"},{link:"pair-info",name: "Trading asset"},
+    {link:"accessible-mobile",name:"Accessible on Mobile & web"},{link:"hold-paid-across", name:"Hold paid across"}]);
     const nunberMenuItem = menuItem.length; 
     if(falseLst.length == 0){
         for(let i = 0;i<nunberMenuItem;i++){

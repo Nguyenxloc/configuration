@@ -1,6 +1,8 @@
 
 import App324 from "configuration/324/App324";
 import App324plainText from "configuration/324/App324plainText";
+import HoldPaidAcross from "configuration/HoldPaidAcross/HoldPaidAcross";
+import Accessible from "configuration/accesible-mobile/Accesible";
 import AppConfig from "configuration/appConfig/AppConfig";
 import AppConfigPlainText from "configuration/appConfig/AppConfigPlainText";
 import Env from "configuration/env/Env";
@@ -33,6 +35,8 @@ export default function RightSide() {
                 <Route path="/configuration/list-dapp-ui" element={<ListDappUI/>}></Route>
                 <Route path="/configuration/hs-network-list-ui" element={<HsNetworkList />}></Route>
                 <Route path="/configuration/pair-info" element={<PairInfo/>}></Route>
+                <Route path="/configuration/accessible-mobile" element={<Accessible/>}></Route>
+                <Route path="/configuration/hold-paid-across" element={<HoldPaidAcross/>}></Route>
             </Routes>
         </div>
     )

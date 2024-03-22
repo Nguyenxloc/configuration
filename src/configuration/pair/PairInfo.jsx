@@ -7,7 +7,6 @@ export default function PairInfo() {
     const data = await res.json();
     setData(data.pairsInfo);
   }
-  console.log("chain name: ", data);
   useEffect(
     () => {
       if (data.length == 0) {
@@ -16,12 +15,19 @@ export default function PairInfo() {
     }
   );
   return (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="bg-black6 w-[1500px]">
+          <h2 className="text-center text-[72px] text-white">
+            <span className="text-purple">Multiple </span>
+            Trading Assets
+          </h2>
+          <div className="bg-black6 grid grid-cols-3 gap-2">
           {data.map((item,index) =>(
-            <PairInfoCard dataPrefix={item} />
+            <PairInfoCard dataPrefix={item}/>
           )
           )
           }
         </div>
-      );
+        </div>
+        
+  );
 }
