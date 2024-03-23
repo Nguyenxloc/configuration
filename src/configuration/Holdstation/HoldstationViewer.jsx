@@ -17,7 +17,7 @@ export default function HoldStationViewer() {
     return (
         <div>
             <h1>holdstation.com</h1>
-            <Navbar/>
+            <Navbar />
         </div>
     )
 }

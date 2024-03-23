@@ -1,6 +1,6 @@
 {
-  "homepage": "https://nguyenxloc.github.io/configuration",
-  "name": "configuration",
+  "homepage": "https://nguyenxloc.github.io/autoair",
+  "name": "autoair",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

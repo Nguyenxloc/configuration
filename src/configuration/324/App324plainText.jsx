@@ -22,8 +22,8 @@ export default function App324plainText() {
         <pre className="w-fit flex">
             <p className="text-start">{dataString}</p>
             <p></p>
-            <div>
-            <button onClick={() => { navigator.clipboard.writeText(dataString) }} className="bg-black-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">
+            <div className="bg-purple hover:bg-blue-700 font-bold py-2 px-4 rounded" style={{border:"solid red 1px "}}>
+            <button onClick={() => { navigator.clipboard.writeText(dataString) }}>
                 <p className="text-xl">Copy</p>
             </button>
             </div>
