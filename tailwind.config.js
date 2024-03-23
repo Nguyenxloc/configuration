@@ -40,6 +40,7 @@ export default {
       gray6: "#141414",
       gray7: "#A7AEAD",
       gray8: "#FFFFFF80",
+      gray9: "#686A6C",
 
       white: "#fff",
       purple: "#B9A9FB",

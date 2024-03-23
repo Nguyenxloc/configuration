@@ -9,7 +9,7 @@ export default function Content(){
             AutoAir AI will soon be active in beta on zkSync Era. Join the
             </p>
             <p className="flex text-center leading-[20px]">
-            <a href="https://t.me/AutoAirBot" className="text-white text-center">AutoAir AI Telegram Group </a>
+            <a href="https://t.me/AutoAirBot" className="text-white">AutoAir AI Telegram Group </a>
             <p className="text-gray8 ms-2">now to be among the first to receive</p>
             </p> 
             <p className="text-center text-gray8">the latest project updates and information.</p>
