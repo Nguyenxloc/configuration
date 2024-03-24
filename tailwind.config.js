@@ -42,6 +42,11 @@ export default {
       gray8: "#FFFFFF80",
       gray9: "#686A6C",
       gray10: "#0000001A",
+      gray11: "#A7AEAD",
+      gray12: "#E1E2E2",
+
+      blue1: "#2793f7",
+      
 
       white: "#fff",
       purple: "#B9A9FB",

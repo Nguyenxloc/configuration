@@ -8,13 +8,14 @@ import Navbar from "header/Navbar";
 import PopupBanner from "popupBanner/PopupBanner";
 import React, { Component } from "react";
 import SimplifyAirdrop from "simplifyAirdropJourney/SimplifyAirdrop";
+import TokenomicsView from "tokenomics/TokenomicsView";
 
 export class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="flex flex-row w-[1000px] h-[1000px] bg-black">
-            <BannerView/>
+        <div className="flex flex-row w-[1000px] h-[1000px] bg-white justify-center">
+            <TokenomicsView/>
         </div>
       </div>
     );
