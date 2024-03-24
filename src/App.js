@@ -14,7 +14,7 @@ export class App extends Component {
     return (
       <div className="App">
         <div className="flex flex-row w-[1000px] h-[1000px] bg-black">
-            <SimplifyAirdrop/>
+            <BannerView/>
         </div>
       </div>
     );
