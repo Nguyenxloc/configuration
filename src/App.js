@@ -12,23 +12,24 @@ import Navbar from "header/Navbar";
 import PopupBanner from "popupBanner/PopupBanner";
 import React, { Component } from "react";
 import SimplifyAirdrop from "simplifyAirdropJourney/SimplifyAirdrop";
+import RoadMapTree from "technicalRoadmap/RoadMapTree";
 import TokenomicsView from "tokenomics/TokenomicsView";
 
 export class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="w-[1000px] h-[1000px] justify-center">
+        {/* <div className="w-[1000px] h-[1000px] justify-center">
             <BannerView/>
             <AutoAirServiceMobile/>
             <SimplifyAirdrop/>
             <TokenomicsView/>
             <AutoAirAIFeature />
             <Footer/>
-        </div>
-        {/* <div className="flex  w-[1000px] h-[1000px] bg-white justify-center ms-[30px]">
-            <Footer/>
         </div> */}
+        <div className="flex  w-[1000px] h-[1000px] bg-white justify-center ms-[30px]">
+            <RoadMapTree/>
+        </div>
       </div>
     );
   }
