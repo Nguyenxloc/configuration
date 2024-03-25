@@ -7,6 +7,7 @@ import GreetingTxtArea from "banner/GreetingTxtArea";
 import MeetAAITeleBtn from "banner/MeetAAITeleBtn";
 import CardChainLst from "chainIdMng/CardChainLst";
 import ChainIDMngTxt from "chainIdMng/ChainIDMngTxt";
+import Footer from "footer/Footer";
 import Navbar from "header/Navbar";
 import PopupBanner from "popupBanner/PopupBanner";
 import React, { Component } from "react";
@@ -23,9 +24,10 @@ export class App extends Component {
             <SimplifyAirdrop/>
             <TokenomicsView/>
             <AutoAirAIFeature />
+            <Footer/>
         </div>
         {/* <div className="flex  w-[1000px] h-[1000px] bg-white justify-center ms-[30px]">
-          <AutoAirAIFeature />
+            <Footer/>
         </div> */}
       </div>
     );
