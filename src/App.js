@@ -17,15 +17,16 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="w-[1000px] h-[1000px] justify-center">
+        <div className="w-[1000px] h-[1000px] justify-center">
             <BannerView/>
             <AutoAirServiceMobile/>
             <SimplifyAirdrop/>
             <TokenomicsView/>
-        </div> */}
-        <div className= "flex  w-[1000px] h-[1000px] bg-white justify-center">
-              <AutoAirAIFeature/>
+            <AutoAirAIFeature />
         </div>
+        {/* <div className="flex  w-[1000px] h-[1000px] bg-white justify-center ms-[30px]">
+          <AutoAirAIFeature />
+        </div> */}
       </div>
     );
   }
