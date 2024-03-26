@@ -459,6 +459,37 @@ export default function () {
               </p>
             </div>
           </div>
+          <div className="mt-[70px]">
+            <h3 className="font-medium">AutoAir AI Terminal</h3>
+            <p className="text-[28px] font-medium leading-[36px]">
+              Rolling out the AutoAir AI Terminal, a one-stop dashboard for
+              managing all your wallets, tracking your assets‘ flow, and staying
+              ahead with the latest crypto trends.
+            </p>
+            <hr />
+            <ul className="flex flex-col gap-[16px]">
+              <li className="flex gap-[8px]">
+                <div className="flex-shrink-0 rounded-full w-[20px] h-[20px] border border-[#A7AEAD]"></div>
+                <p className="text-[20px] font-medium leading-[28px] text-[#686A6C]">
+                  AutoAir FlashStrike
+                </p>
+              </li>
+              <li className="flex gap-[8px]">
+                <div className="flex-shrink-0 rounded-full w-[20px] h-[20px] border border-[#A7AEAD]"></div>
+                <p className="text-[20px] font-medium leading-[28px] text-[#686A6C]">
+                  AutoAir FlashStrike
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div className="mt-[70px]">
+            <h3 className="font-medium">AutoAir AI Assistant</h3>
+            <p className="text-[28px] font-medium leading-[36px]">
+              Launching the AutoAir AI Assistant, providing users with a
+              chat-based interface for real-time alerts on new trends, potential
+              wallet wins, and future token drops.
+            </p>
+          </div>
         </div>
       </div>
     </div>

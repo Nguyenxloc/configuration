@@ -8,6 +8,7 @@ import GreetingTxtArea from "banner/GreetingTxtArea";
 import MeetAAITeleBtn from "banner/MeetAAITeleBtn";
 import CardChainLst from "chainIdMng/CardChainLst";
 import ChainIDMngTxt from "chainIdMng/ChainIDMngTxt";
+import FaqsView from "faqs/FaqsView";
 import Footer from "footer/Footer";
 import Navbar from "header/Navbar";
 import PopupBanner from "popupBanner/PopupBanner";
@@ -29,10 +30,11 @@ export class App extends Component {
             <AutoAirAIFeature />
             <RoadMapTree/>
             <RoadMapTime/>
+            <FaqsView/>
             <Footer/>
         </div>
         {/* <div className="flex bg-white justify-center ms-[30px]">
-            <RoadMapTime/>
+            <FaqsView/>
         </div> */}
       </div>
     );
