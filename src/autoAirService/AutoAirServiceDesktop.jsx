@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function AutoAirServiceMobile(){
+export default function AutoAirServiceDesk(){
     return(
-       <div className="bg-black w-[1000px] h-[100px]]">
+       <div className="bg-black">
             <div className="text-white"> 
                 <h1>AutoAir</h1>
                 <h1>Service</h1>

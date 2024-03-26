@@ -1,5 +1,6 @@
 
 import AutoAirAIFeature from "autoAirAIFeatures/AutoAirAIFeature";
+import AutoAirServiceDesktop from "autoAirService/AutoAirServiceDesktop";
 import AutoAirServiceMobile from "autoAirService/AutoAirServiceMobile";
 import BannerView from "banner/BannerView";
 import Content from "banner/Content";
@@ -22,7 +23,7 @@ export class App extends Component {
       <div className="App">
         <div className="justify-center">
             <BannerView/>
-            <AutoAirServiceMobile/>
+            <AutoAirServiceDesktop/>
             <SimplifyAirdrop/>
             <TokenomicsView/>
             <AutoAirAIFeature />

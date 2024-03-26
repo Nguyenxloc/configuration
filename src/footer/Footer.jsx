@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Footer() {
     return (
-        <div className="w-[1156px] h-[856px] bg-black mt-[300px]">
+        <div className="bg-black mt-[300px]">
             <div className="flex justify-center">
                 <Marquee className="gap-[80px]" speed={130}>
                     <p className="text-[80px] text-white">
@@ -15,8 +15,8 @@ export default function Footer() {
             <div className="flex justify-center mt-[90px]">
                 <MeetAAITeleBtn />
             </div>
-            <div className="flex mt-[200px] ms-[30px]">
-                <div className="w-[360px] h-[220px] mt-[145px]" style={{border:"solid red 1px"}}>
+            <div className="flex mt-[200px] ms-[30px] gap-[60px]" style={{border:"1px solid red"}}>
+                <div className="w-4/12 h-fit" style={{border:"solid red 1px"}}>
                     <div>
                     </div>
                     <p className="font-medium">Legal</p>
@@ -27,18 +27,18 @@ export default function Footer() {
                     <p className="text-[32px] leading-[40px] text-gray15 mt-[80px]">2024, All Rights Reserved</p>
                 </div>
                 <div className="w-[366px] h-[366px]" style={{ border: "1px solid red" }}>
-                    <div className="rounded-full h-[366px] border border-gray15">
+                    <div className="rounded-full border border-gray15 w-[366px] h-[366px]">
                         <img className="ms-[130px] mt-[70px]" src="https://autoair.xyz/icon/up.svg" alt="" />
                         <p className="text-[32px] font-medium text-gray14 leading-[40px] ms-[100px] mt-[40px]">Back to top</p>
                     </div>
                 </div>
-                <div className="w-[210px] h-[232px] mt-[135px]" style={{ border: "1px solid red" }}>
+                <div className="w-3/12 h-[232px]" style={{ border: "1px solid red" }}>
                     <p className="text-right text-medium">About us</p>
                     <div className="flex flex-row-reverse gap-[48px]">
                         <a className="text-[20px] text-white no-underline" href="">Blog</a>
                         <a className="text-[20px] text-white no-underline" href="">GitBook</a>
                     </div>
-                    <p className="text-right text-medium mt-[90px]">Social</p>
+                    <p className="text-right text-medium">Social</p>
                     <div className="flex flex-row-reverse gap-[48px]">
                         <a className="text-[20px] text-white no-underline" href="">Twitter X</a>
                         <a className="text-[20px] text-white no-underline" href="">Telegram</a>

@@ -2,8 +2,9 @@ import React from "react";
 
 export default function TokenomicsTbl() {
     return (
+        <div className="flex justify-center">
         <div>
-            <h2 className="text-center">Tokenomics</h2>
+            <h2 className="text-center text-[80px]">Tokenomics</h2>
             <table className="table-fixed">
                 <thead>
                     <tr className="text-gray11 border-b border-gray12">
@@ -62,6 +63,7 @@ export default function TokenomicsTbl() {
                     </tr>
                 </tbody>
             </table>
+        </div>
         </div>
     );
 }

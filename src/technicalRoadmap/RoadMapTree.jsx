@@ -1,16 +1,14 @@
 import React from "react";
 
 export default function RoadMapTree() {
-    return (
-        <div>
-            <div className="ms-[300px]">
-                <h2 className="text-[48px]">
-                    Technical Roadmap
-                </h2>
-                <div className="w-[1px] h-[688px] bg-gray15 ms-[200px]">
-                </div>
-            </div>
-            {/* <p> 
+  return (
+    <div className="flex justify-center">
+      <div>
+        <div className="ms-[300px]">
+          <h2 className="text-[48px]">Technical Roadmap</h2>
+          <div className="w-[1px] h-[688px] bg-gray15 ms-[200px]"></div>
+        </div>
+        {/* <p> 
                 <div className="word">Our</div>
                 <div className="word">Roadmap</div>
                 <div className="word">is</div>
@@ -48,15 +46,20 @@ export default function RoadMapTree() {
                 <div className="word">AI</div>
                 <div className="word">Bot</div>
             </p> */}
-            <p className="w-[1016px] text-[32px] text-center font-medium">
-                Our roadmap is a dynamic blueprint designed to harness the synergy between AutoAir AI‘s technological prowess and the visionary investments of a16z & Binance Labs. Here‘s how we‘re aligning our core offerings – AutoAir AI Bot
-            </p>
-            <div className="w-[1px] h-[688px] bg-gray15 ms-[500px]">
-            </div>
-            <div className="border 1px h-[444px]"> 
-                <p className="text-[384px] align-top">2024</p>
-                <p className="text-[60px] text-center">The year of Launch and Expansion</p>
-            </div>
+        <p className="w-[1016px] text-[32px] text-center font-medium">
+          Our roadmap is a dynamic blueprint designed to harness the synergy
+          between AutoAir AI‘s technological prowess and the visionary
+          investments of a16z & Binance Labs. Here‘s how we‘re aligning our core
+          offerings – AutoAir AI Bot
+        </p>
+        <div className="w-[1px] h-[688px] bg-gray15 ms-[500px]"></div>
+        <div className="border 1px h-[444px]">
+          <p className="text-[384px] align-top">2024</p>
+          <p className="text-[60px] text-center">
+            The year of Launch and Expansion
+          </p>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
