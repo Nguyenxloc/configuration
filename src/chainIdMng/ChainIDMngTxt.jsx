@@ -13,7 +13,6 @@ export default function CardChainLst() {
                     </div>
                 </div>
             </div>
-
             <p className="text-gray9 text-[24px] w-[600px] text-center">
                 AutoAir executes a variety of automated tasks across various protocols, operating on different chains.
             </p>

@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Footer() {
     return (
-        <div className="w-[1156px] h-[856px] bg-black mt-[40px]">
+        <div className="w-[1156px] h-[856px] bg-black mt-[300px]">
             <div className="flex justify-center">
                 <Marquee className="gap-[80px]" speed={130}>
                     <p className="text-[80px] text-white">
