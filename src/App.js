@@ -20,18 +20,19 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="w-[1000px] h-[1000px] justify-center">
+        <div className="justify-center">
             <BannerView/>
             <AutoAirServiceMobile/>
             <SimplifyAirdrop/>
             <TokenomicsView/>
             <AutoAirAIFeature />
             <RoadMapTree/>
-            <Footer/>
-        </div> */}
-        <div className="flex bg-white justify-center ms-[30px]">
             <RoadMapTime/>
+            <Footer/>
         </div>
+        {/* <div className="flex bg-white justify-center ms-[30px]">
+            <RoadMapTime/>
+        </div> */}
       </div>
     );
   }
