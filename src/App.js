@@ -7,7 +7,9 @@ import Content from "banner/Content";
 import GreetingTxtArea from "banner/GreetingTxtArea";
 import MeetAAITeleBtn from "banner/MeetAAITeleBtn";
 import CardChainLst from "chainIdMng/CardChainLst";
-import ChainIDMngTxt from "chainIdMng/ChainIDMngTxt";
+import ChainLstTxt from "chainIdMng/ChainLstTxt";
+import ChainLstView from "chainIdMng/ChainLstView";
+import SideBarChainLst from "chainIdMng/SideBarChainLst";
 import FaqsView from "faqs/FaqsView";
 import Footer from "footer/Footer";
 import Navbar from "header/Navbar";
@@ -22,8 +24,9 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="justify-center">
+        <div className="justify-center">
             <BannerView/>
+            <ChainLstView/>
             <AutoAirServiceDesktop/>
             <SimplifyAirdrop/>
             <TokenomicsView/>
@@ -32,10 +35,10 @@ export class App extends Component {
             <RoadMapTime/>
             <FaqsView/>
             <Footer/>
-        </div> */}
-        <div className="flex bg-black justify-center ms-[30px] h-fit">
-            <CardChainLst/>
         </div>
+        {/* <div className="flex bg-[#f2f2f2] justify-center ms-[30px] h-fit">
+             <ChainLstView/>
+        </div> */}
       </div>
     );
   }

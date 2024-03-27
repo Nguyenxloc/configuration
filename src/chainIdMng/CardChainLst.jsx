@@ -100,10 +100,13 @@ export default function CardChainLst() {
     },
   ];
   return (
-    <div className="w-9/12 grid grid-cols-2 gap-[24px]" style={{border:"solid red 1px"}}>
+    <div
+      className="grid grid-cols-2 gap-[24px] gap-[8px] h-fit"
+      style={{ border: "solid red 1px" }}
+    >
       {data.map((item, index) => {
         return (
-          <div className="w-full h-[214px] bg-white p-[24] rounded-[24px] gap-[24px]">
+          <div className="w-full h-[214px] bg-white rounded-[24px] p-[24px] mb-[2px]">
             <div className="flex gap-[10px]">
               <div className="w-[32px] h-[32px]">
                 <img src={item.iconURl} alt="" />
@@ -112,12 +115,15 @@ export default function CardChainLst() {
                 {item.tittle}
               </p>
             </div>
-            <div className=" flex flex-wrap">
-            {item.platform.map((plf,index) => {
-              return (
-                  <div className="h-[48px]">{plf.namePlf}</div>
-              );
-            })}
+            <div className=" flex gap-[8px] flex-wrap" style={{border:"1px solid red"}}>
+              {item.platform.map((plf, index) => {
+                return (
+                  <div className="h-[48px] gap-[8px] px-[20px] py-[10px] rounded-full bg-[#0000000D] flex flex-wrap">
+                    <img className="rounded-full" width={20} height={20} src={plf.iconPlfUrl} alt="" />
+                    <span className="text-[16px] font-medium">{plf.namePlf}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         );
