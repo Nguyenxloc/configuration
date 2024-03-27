@@ -13,6 +13,7 @@ import SideBarChainLst from "chainIdMng/SideBarChainLst";
 import FaqsView from "faqs/FaqsView";
 import Footer from "footer/Footer";
 import Navbar from "header/Navbar";
+import OurBackerView from "ourBacker/OurBackerView";
 import PopupBanner from "popupBanner/PopupBanner";
 import React, { Component } from "react";
 import SimplifyAirdrop from "simplifyAirdropJourney/SimplifyAirdrop";
@@ -24,7 +25,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="justify-center">
+        {/* <div className="justify-center">
             <BannerView/>
             <ChainLstView/>
             <AutoAirServiceDesktop/>
@@ -35,10 +36,10 @@ export class App extends Component {
             <RoadMapTime/>
             <FaqsView/>
             <Footer/>
-        </div>
-        {/* <div className="flex bg-[#f2f2f2] justify-center ms-[30px] h-fit">
-             <ChainLstView/>
         </div> */}
+        <div className="flex justify-center ms-[30px] h-fit">
+            <OurBackerView/>
+        </div>
       </div>
     );
   }
