@@ -19,7 +19,7 @@ export default function SideBarChainLst(){
                {data.map(
                     (item,index)=>{
                          return(
-                         <div className="px-[20px] py-[10px]">
+                         <div className="px-[60px] py-[10px]">
                               <button className="flex p-[5px] gap-[8px]">
                                    <img width={20} height={20} src={item.iconURL} alt="" />
                                    <span className="text-[16px] leading-[28px] font-medium text-black">{item.content}</span>

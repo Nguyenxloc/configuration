@@ -5,11 +5,11 @@ import ChainLstTxt from "./ChainLstTxt";
 
 export default function ChainLstView() {
   return (
-    <div className="flex flex-col gap-[40px]">
+    <div className="flex flex-col gap-[40px] bg-[#f2f2f2]">
       <div className="flex justify-center">
       <ChainLstTxt/>
       </div>
-      <div className="flex gap-[103px]">
+      <div className="flex">
         <SideBarChainLst />
         <CardChainLst />
       </div>

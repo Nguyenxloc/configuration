@@ -25,21 +25,22 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="justify-center">
+        <div className="justify-center">
             <BannerView/>
             <ChainLstView/>
             <AutoAirServiceDesktop/>
             <SimplifyAirdrop/>
             <TokenomicsView/>
+            <OurBackerView/>
             <AutoAirAIFeature />
             <RoadMapTree/>
             <RoadMapTime/>
             <FaqsView/>
             <Footer/>
-        </div> */}
-        <div className="flex justify-center ms-[30px] h-fit">
-            <OurBackerView/>
         </div>
+        {/* <div className="flex justify-center ms-[30px] h-fit">
+            <OurBackerView/>
+        </div> */}
       </div>
     );
   }

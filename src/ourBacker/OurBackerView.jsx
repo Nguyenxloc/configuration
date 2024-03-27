@@ -364,8 +364,7 @@ export default function OurBackerView() {
           {dataRow1.map((item, index) => {
             return (
               <div
-                className="w-3/12 h-[178px]"
-                style={{ border: "solid red 1px" }}
+                className="w-3/12 h-[178px] rounded-[16px] border-[1px] border-[#A7AEAD]"
               >
                 <div className="py-[50px] flex flex-col gap-[20px]">
                   <div className="flex justify-center">
@@ -388,8 +387,7 @@ export default function OurBackerView() {
           {dataRow2.map((item, index) => {
             return (
               <div
-                className="w-4/12 h-[178px]"
-                style={{ border: "solid red 1px" }}
+                className="w-4/12 h-[178px] rounded-[16px] border-[1px] border-[#A7AEAD]"
               >
                 <div className="py-[50px] flex flex-col gap-[20px]">
                   <div className="flex justify-center">
@@ -412,8 +410,7 @@ export default function OurBackerView() {
           {dataRow3.map((item, index) => {
             return (
               <div
-                className="w-2/12 h-[118px]"
-                style={{ border: "solid red 1px" }}
+                className="w-2/12 h-[118px] rounded-[16px] border-[1px] border-[#A7AEAD]"
               >
                 <div className="py-[30px] flex flex-col gap-[10px]">
                   <div className="flex justify-center">
@@ -436,8 +433,7 @@ export default function OurBackerView() {
           {dataRow4.map((item, index) => {
             return (
               <div
-                className="w-2/12 h-[118px]"
-                style={{ border: "solid red 1px" }}
+                className="w-2/12 h-[118px] rounded-[16px] border-[1px] border-[#A7AEAD]"
               >
                 <div className="py-[30px] flex flex-col gap-[10px]">
                   <div className="flex justify-center">
@@ -460,8 +456,7 @@ export default function OurBackerView() {
           {dataRow5.map((item, index) => {
             return (
               <div
-                className="w-2/12 h-[118px]"
-                style={{ border: "solid red 1px" }}
+                className="w-2/12 h-[118px] rounded-[16px] border-[1px] border-[#A7AEAD]"
               >
                 <div className="py-[30px] flex flex-col gap-[10px]">
                   <div className="flex justify-center">
