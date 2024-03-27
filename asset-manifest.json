@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/autoair/static/css/main.8b21919f.css",
-    "main.js": "/autoair/static/js/main.00184a22.js",
+    "main.css": "/autoair/static/css/main.1298828a.css",
+    "main.js": "/autoair/static/js/main.17e63194.js",
     "static/js/787.7dd34774.chunk.js": "/autoair/static/js/787.7dd34774.chunk.js",
     "static/media/bootstrap-icons.woff?": "/autoair/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/autoair/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "index.html": "/autoair/index.html",
-    "main.8b21919f.css.map": "/autoair/static/css/main.8b21919f.css.map",
-    "main.00184a22.js.map": "/autoair/static/js/main.00184a22.js.map",
+    "main.1298828a.css.map": "/autoair/static/css/main.1298828a.css.map",
+    "main.17e63194.js.map": "/autoair/static/js/main.17e63194.js.map",
     "787.7dd34774.chunk.js.map": "/autoair/static/js/787.7dd34774.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b21919f.css",
-    "static/js/main.00184a22.js"
+    "static/css/main.1298828a.css",
+    "static/js/main.17e63194.js"
   ]
 }
