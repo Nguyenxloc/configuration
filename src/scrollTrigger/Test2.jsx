@@ -38,8 +38,7 @@ export default function test2() {
 
   return (
     <div ref={app} className="App">
-      <Box />
-      <Circle ref={circle} />
+
     </div>
   );
 }

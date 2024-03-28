@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TokenomicsTbl() {
     return (
-        <div className="flex justify-center" style={{border:"solid red 1px"}}>
+        <div className="flex" style={{border:"solid red 1px"}}>
         <div>
             <h2 className="text-center text-[80px]">Tokenomics</h2>
             <table className="table-fixed">

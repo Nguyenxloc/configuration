@@ -360,7 +360,7 @@ export default function OurBackerView() {
         <h2 className="text-[48px] leading-[56px] font-medium">Our Backers</h2>
       </div>
       <div className="">
-        <div className="flex">
+        <div className="flex xl:flex-nowrap lg:flex-wrap">
           {dataRow1.map((item, index) => {
             return (
               <div
@@ -383,7 +383,7 @@ export default function OurBackerView() {
             );
           })}
         </div>
-        <div className="flex">
+        <div className="flex xl:flex-nowrap  lg:flex-wrap">
           {dataRow2.map((item, index) => {
             return (
               <div
@@ -406,7 +406,7 @@ export default function OurBackerView() {
             );
           })}
         </div>
-        <div className="flex">
+        <div className="flex xl:flex-nowrap lg:flex-wrap">
           {dataRow3.map((item, index) => {
             return (
               <div
@@ -429,7 +429,7 @@ export default function OurBackerView() {
             );
           })}
         </div>
-        <div className="flex">
+        <div className="flex xl:flex-nowrap lg:flex-wrap">
           {dataRow4.map((item, index) => {
             return (
               <div
@@ -452,7 +452,7 @@ export default function OurBackerView() {
             );
           })}
         </div>
-        <div className="flex">
+        <div className="flex xl:flex-nowrap lg:flex-wrap">
           {dataRow5.map((item, index) => {
             return (
               <div
