@@ -5,7 +5,7 @@ export default function RoadMapTree() {
     <div className="flex justify-center">
       <div>
         <div className="ms-[300px]">
-          <h2 className="text-[48px]">Technical Roadmap</h2>
+          <h2 className="text-[48px] text-start">Technical Roadmap</h2>
           <div className="w-[1px] h-[688px] bg-gray15 ms-[200px]"></div>
         </div>
         {/* <p> 

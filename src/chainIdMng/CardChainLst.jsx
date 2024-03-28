@@ -106,7 +106,7 @@ export default function CardChainLst() {
     >
       {data.map((item, index) => {
         return (
-          <div className="w-full h-[214px] bg-white rounded-[24px] p-[24px] mb-[2px]">
+          <div className="w-full h-[214px] bg-white rounded-[24px] p-[24px] mb-[2px] flex flex-col justify-between gap-[4px]">
             <div className="flex gap-[10px]">
               <div className="w-[32px] h-[32px]">
                 <img src={item.iconURl} alt="" />

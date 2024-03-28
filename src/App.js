@@ -17,6 +17,7 @@ import Navbar from "header/Navbar";
 import OurBackerView from "ourBacker/OurBackerView";
 import PopupBanner from "popupBanner/PopupBanner";
 import React, { Component } from "react";
+import ScrollTest from "scrollTrigger/ScrollTest";
 import SimplifyAirdrop from "simplifyAirdropJourney/SimplifyAirdrop";
 import RoadMapTime from "technicalRoadmap/RoadMapTime";
 import RoadMapTree from "technicalRoadmap/RoadMapTree";
@@ -39,10 +40,11 @@ export class App extends Component {
             <FaqsView/>
             <Footer/>
         </div>
-        {/* <div className="flex justify-center ms-[30px] h-fit">
-            <AnalyticsView/>
-        </div> */}
-      </div>
+        </div>
+        // <div className="flex justify-center ms-[30px] h-fit">
+        //     <ScrollTest/>
+        // </div>
+      
     );
   }
 }

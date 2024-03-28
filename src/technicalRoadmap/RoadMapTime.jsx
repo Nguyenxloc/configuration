@@ -460,8 +460,8 @@ export default function () {
             </div>
           </div>
           <div className="mt-[70px]">
-            <h3 className="font-medium">AutoAir AI Terminal</h3>
-            <p className="text-[28px] font-medium leading-[36px]">
+            <h3 className="font-medium text-start text-[48px]">AutoAir AI Terminal</h3>
+            <p className="text-[28px] font-medium leading-[36px] text-start">
               Rolling out the AutoAir AI Terminal, a one-stop dashboard for
               managing all your wallets, tracking your assets‘ flow, and staying
               ahead with the latest crypto trends.
@@ -483,8 +483,8 @@ export default function () {
             </ul>
           </div>
           <div className="mt-[70px]">
-            <h3 className="font-medium">AutoAir AI Assistant</h3>
-            <p className="text-[28px] font-medium leading-[36px]">
+            <h3 className="font-medium text-start text-[48px]">AutoAir AI Assistant</h3>
+            <p className="text-[28px] font-medium leading-[36px] text-start">
               Launching the AutoAir AI Assistant, providing users with a
               chat-based interface for real-time alerts on new trends, potential
               wallet wins, and future token drops.

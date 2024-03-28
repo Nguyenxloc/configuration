@@ -4,7 +4,9 @@
 body {
 
 }
-
+.bgloc{
+  background-color: red;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -49,4 +51,25 @@ padding: 10px;
   line-height: 1.2;
   /*   outline: 6px dotted teal; */
   font-size: 10vw;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+body { 
+  font-family: "Signika Negative", sans-serif; 
+  font-weight: 300;
+  height: 300vh;
+}
+.trigger {
+  position: absolute;
+  top: 75vh;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  background-color: lightgray;
+  padding: 20px;
+}
+.box {
+  background-color: black;
+  width: 10vw;
+  height: 10vw;
 }

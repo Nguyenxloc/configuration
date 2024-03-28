@@ -18,16 +18,18 @@ export default function SimplifyAirdrop() {
             Simple Pricing. Exceptional Benefits.
           </p>
         </div>
-        <div className="flex divide-x divide-gray10">
-          <div className="w-[550px] h-[552px]">
-            <div className="">
+        <div className="lg:flex divide-x divide-gray10">
+          <div className="lg:w-6/12 md:w-12/12 md:rounded-[20px] md:bg-white h-[552px]" style={{border:"solid red 1px"}}>
+            <div>
+              <div className="flex justify-end">
               <div className="w-[320px] h-[52px] bg-gray10 rounded-l-full flex font-medium text-[20px] ms-[180px]">
                 <p className="ms-[80px] mt-[10px]">Standard Tier</p>
                 <div className="mt-[12px] ms-[10px] text-[16px] border border-black rounded-full w-[50px] h-[26px] text-center">
                   <p>Free</p>
                 </div>
               </div>
-              <div className="flex justify-end me-[32px] ">
+              </div>
+              <div className="lg:flex flex-row-reverse flex justify-end me-[32px] ">
                 <p className="font-medium mt-[15px]">
                   Basic Access: Default Script Utilization
                 </p>
@@ -37,7 +39,7 @@ export default function SimplifyAirdrop() {
                   alt=""
                 />
               </div>
-              <div className="flex justify-end me-[32px]">
+              <div className="flex lg:justify-end md:justify-start  me-[32px]">
                 <p className="font-medium mt-[15px]">Execute tasks on 1 dApp</p>
                 <img
                   className=""
@@ -45,17 +47,17 @@ export default function SimplifyAirdrop() {
                   alt=""
                 />
               </div>
-              <div className="flex justify-end me-[32px]">
+              <div className="flex lg:justify-end md:justify-start  me-[32px]">
                 <p className="font-medium mt-[15px]">
                   Advanced AI On-Chain Analysis
                 </p>
                 <img
                   className=""
-                  src="hhttps://autoair.xyz/icon/x_v2.svg"
+                  src="https://autoair.xyz/icon/x_v2.svg"
                   alt=""
                 />
               </div>
-              <div className="flex justify-end me-[32px]">
+              <div className="flex lg:justify-end md:justify-start  me-[32px]">
                 <p className="font-medium mt-[15px]">
                   Algorithmic Randomization of Parameters
                 </p>
@@ -65,7 +67,7 @@ export default function SimplifyAirdrop() {
                   alt=""
                 />
               </div>
-              <div className="flex justify-end me-[32px]">
+              <div className="flex lg:justify-end md:justify-start  me-[32px]">
                 <p className="font-medium mt-[15px]">
                   Automated Task Execution: Weekly/Monthly Randomize
                 </p>
@@ -75,7 +77,7 @@ export default function SimplifyAirdrop() {
                   alt=""
                 />
               </div>
-              <div className="flex justify-end me-[32px]">
+              <div className="flex lg:justify-end md:justify-start  me-[32px]">
                 <p className="font-medium mt-[15px]">
                   New Strategy Module Activation
                 </p>
@@ -85,7 +87,7 @@ export default function SimplifyAirdrop() {
                   alt=""
                 />
               </div>
-              <div className="flex justify-end me-[32px]">
+              <div className="flex lg:justify-end md:justify-start me-[32px]">
                 <p className="font-medium mt-[15px]">Commission Sharing</p>
                 <img
                   className=""
@@ -93,7 +95,7 @@ export default function SimplifyAirdrop() {
                   alt=""
                 />
               </div>
-              <div className="flex justify-end me-[32px]">
+              <div className="flex lg:justify-end md:justify-start me-[32px]">
                 <p className="font-medium mt-[15px] text-end">
                   Referral Sharing
                 </p>
@@ -105,10 +107,10 @@ export default function SimplifyAirdrop() {
               </div>
             </div>
           </div>
-          <div className="w-[550px] h-[552px]">
+          <div className="lg:w-6/12 md:w-12/12 md:rounded-[20px] md:bg-white h-[552px]" style={{border:"solid red 1px"}}>
             <div className="">
               <div className="w-[320px] h-[52px] bg-black rounded-r-full flex text-white font-medium text-[20px] ">
-                <p className="ms-[80px] mt-[10px]">Premium Tier</p>
+                <p className="ms-[70px] mt-[10px]">Premium Tier</p>
                 <div className="mt-[12px] ms-[10px] text-[16px] border rounded-full w-[85px] h-[26px] text-center">
                   <p>Beta free</p>
                 </div>

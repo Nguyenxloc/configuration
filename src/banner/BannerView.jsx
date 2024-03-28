@@ -21,7 +21,7 @@ export default function BannerView() {
             <div className="mt-[100px] flex justify-center" style={{ border: "solid red 1px" }}>
                 <MeetAAITeleBtn />
             </div>
-            <div className="mt-[185px]">
+            <div className="mt-[215px]">
                 <GreetingTxtArea />
             </div>
         </div>

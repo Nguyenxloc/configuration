@@ -1,5 +1,5 @@
 import React from "react";
-import { Cell, Pie, PieChart } from "recharts";
+import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 
 export default function TokenomicsChart() {
   const data = [
@@ -21,12 +21,13 @@ export default function TokenomicsChart() {
     "#FF6B3D",
   ];
   return (
-    <div className="flex justify-center">
-      <div className="flex">
+    <div className="flex">
+      <div className="flex flex-wrap gap-[104px] md:justify-center lg:justify-start">
         <div
-          className="w-[326px] h-[468px] ms-[80px]"
+          className="w-[326px] h-[468px]"
           style={{ border: "solid red 1px" }}
         >
+          <ResponsiveContainer width={700} height="100%">
           <PieChart width={326} height={468}>
             <Pie
               data={data}
@@ -46,12 +47,13 @@ export default function TokenomicsChart() {
               ))}
             </Pie>
           </PieChart>
+          </ResponsiveContainer>
         </div>
         <div
-          className="w-[700px] h-[496px] ms-[50px]"
-          style={{ border: "solid red 1px" }}
+          className="w-7/12 h-[475px] flex flex-col gap-[40px]"
+          style={{ border: "solid black 1px" }}
         >
-          <p className="text-[20px] font-medium leading-[28px] text-gray9">
+          <p className="text-[20px] font-medium leading-[28px] text-gray9 text-start">
             This table provides a clear overview of the token distribution,
             immediate availability at TGE, and the vesting schedule for each
             category of the
@@ -61,7 +63,7 @@ export default function TokenomicsChart() {
           </p>
           <div className="grid grid-rows-4 grid-flow-col gap-x-[88px] gap-y-[40px]">
             <div
-              className="w-[306px] h-[49px] flex gap-[12px]"
+              className="w-12/12 h-[49px] flex gap-[12px]"
               style={{ border: "solid red 1px" }}
             >
               <div className="w-[12px] h-[49px] bg-blue1 rounded-[2px]"></div>
@@ -76,7 +78,7 @@ export default function TokenomicsChart() {
               </div>
             </div>
             <div
-              className="w-[306px] h-[49px] flex gap-[12px]"
+              className="w-12/12 h-[49px] flex gap-[12px]"
               style={{ border: "solid red 1px" }}
             >
               <div className="w-[12px] h-[49px] bg-[#8D75ED] rounded-[2px]"></div>
@@ -91,7 +93,7 @@ export default function TokenomicsChart() {
               </div>
             </div>
             <div
-              className="w-[306px] h-[49px] flex gap-[12px]"
+              className="w-12/12 h-[49px] flex gap-[12px]"
               style={{ border: "solid red 1px" }}
             >
               <div className="w-[12px] h-[49px] bg-[#FF679E] rounded-[2px]"></div>
@@ -106,7 +108,7 @@ export default function TokenomicsChart() {
               </div>
             </div>
             <div
-              className="w-[306px] h-[49px] flex gap-[12px]"
+              className="w-12/12 h-[49px] flex gap-[12px]"
               style={{ border: "solid red 1px" }}
             >
               <div className="w-[12px] h-[49px] bg-blue1 rounded-[2px]"></div>
@@ -120,8 +122,8 @@ export default function TokenomicsChart() {
                 <p className="font-bold">5%</p>
               </div>
             </div>
-            <div
-              className="w-[306px] h-[49px] flex gap-[12px]"
+             <div
+              className="w-12/12 h-[49px] flex gap-[12px]"
               style={{ border: "solid red 1px" }}
             >
               <div className="w-[12px] h-[49px] bg-[#42CA80] rounded-[2px]"></div>
@@ -132,11 +134,11 @@ export default function TokenomicsChart() {
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">
                   Team
                 </p>
-                <p className="font-bold">5%</p>
+                <p className="font-bold">05%</p>
               </div>
             </div>
             <div
-              className="w-[306px] h-[49px] flex gap-[12px]"
+              className="w-12/12 h-[49px] flex gap-[12px]"
               style={{ border: "solid red 1px" }}
             >
               <div className="w-[12px] h-[49px] bg-[#F7BD27] rounded-[2px]"></div>
@@ -151,7 +153,7 @@ export default function TokenomicsChart() {
               </div>
             </div>
             <div
-              className="w-[306px] h-[49px] flex gap-[12px]"
+              className="w-12/12 h-[49px] flex gap-[12px]"
               style={{ border: "solid red 1px" }}
             >
               <div className="w-[12px] h-[49px] bg-black rounded-[2px]"></div>

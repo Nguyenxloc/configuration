@@ -19,12 +19,12 @@ export default function Footer() {
                 <div className="w-4/12 h-fit mt-[160px]" style={{border:"solid red 1px"}}>
                     <div>
                     </div>
-                    <p className="font-bold text-[#555555]">Legal</p>
+                    <p className="font-bold text-[#555555] text-start">Legal</p>
                     <div className="flex gap-[48px]">
                         <a className="text-[20px] text-medium text-white no-underline" href="">Term and service</a>
                         <a className="text-[20px] text-medium text-white no-underline" href="">Privacy policy</a>
                     </div>
-                    <p className="text-[32px] leading-[40px] text-gray15 mt-[80px]">2024, All Rights Reserved</p>
+                    <p className="text-[32px] leading-[40px] text-gray15 mt-[80px] text-start">2024, All Rights Reserved</p>
                 </div>
                 <div className="w-[366px] h-[366px]" style={{ border: "1px solid red" }}>
                     <div className="rounded-full border border-gray15 w-[366px] h-[366px]">

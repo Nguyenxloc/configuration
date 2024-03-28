@@ -8,9 +8,9 @@ export default function ChainLstTxt() {
                     <p>Your Airdrop Automated</p> 
                     <div className="flex justify-center">
                     <span>By</span>
-                    <div className="w-[335px] h-[68px] rounded-[12px] p-[12px] flex bg-black">
+                    <div className="w-[335px] h-[68px] inline-flex rounded-[12px] px-[5px] bg-black">
                         <img src="https://autoair.xyz/logo/logo-white.svg" width={65} height={39} alt="" />
-                        <span className="text-[56px] text-white text-center">AutoAir AI</span>
+                        <p className="text-[45px] text-white text-center" style={{border:"1px solid red"}}>AutoAir AI</p>
                     </div>
                     </div> 
                 </div>

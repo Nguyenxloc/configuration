@@ -31,10 +31,10 @@ export default function FaqsView() {
         </div>
         {data.map((item, index) => {
           return (
-            <div className="py-[15px] border border-black">
+            <div className="py-[48px] border border-[#E1E2E2] px-[40px]">
               <div className="flex gap-[16px]">
-                <p className="w-3/12 text-[48px] font-medium">{index + 1}</p>
-                <p className="w-8/12 text-[48px] font-medium">{item.content}</p>
+                <p className="w-3/12 text-[48px] font-medium text-start">{index + 1}</p>
+                <p className="w-8/12 text-[48px] font-medium text-start">{item.content}</p>
                 <div className="bg-black w-[56px] h-[56px] rounded-full p-[16px]">
                   <img
                     width={24}

@@ -5,7 +5,7 @@ import TokenomicsChart from "./TokenomicsChart";
 export default function TokenomicsView() {
     return (
         <div>
-            <div className="ms-[100px]">
+            <div className="">
             <TokenomicsTbl/>
             </div>
             <div>
