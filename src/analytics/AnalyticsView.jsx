@@ -1,8 +1,77 @@
+import BannerView from "banner/BannerView";
+import Footer from "footer/Footer";
+import Navbar from "header/Navbar";
 import React from "react";
+import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from "recharts";
 
 export default function AnalyticsView() {
+  const data = [
+    {
+      "name": "Page A",
+      "uv": 4000,
+      "pv": 2400
+    },
+    {
+      "name": "Page B",
+      "uv": 3000,
+      "pv": 1398
+    },
+    {
+      "name": "Page C",
+      "uv": 2000,
+      "pv": 9800
+    },
+    {
+      "name": "Page D",
+      "uv": 2780,
+      "pv": 3908
+    },
+    {
+      "name": "Page E",
+      "uv": 1890,
+      "pv": 4800
+    },
+    {
+      "name": "Page F",
+      "uv": 2390,
+      "pv": 3800
+    },
+    {
+      "name": "Page G",
+      "uv": 3490,
+      "pv": 4300
+    },
+    {
+      "name": "Page G",
+      "uv": 3490,
+      "pv": 4300
+    },
+    {
+      "name": "Page G",
+      "uv": 3490,
+      "pv": 4300
+    },
+    {
+      "name": "Page G",
+      "uv": 3490,
+      "pv": 4300
+    },
+    {
+      "name": "Page G",
+      "uv": 3490,
+      "pv": 4300
+    },
+    {
+      "name": "Page G",
+      "uv": 3490,
+      "pv": 4300
+    },
+  ]
   return (
     <div className="bg-[#f2f2f2] gap-[100px]">
+      <div className="flex justify-center">
+        <Navbar />
+      </div>
       <div className="font-medium w-full text-center text-[80px] leading-[80px] py-[56px]">
         <p>AutoAir Stats</p>
       </div>
@@ -113,36 +182,68 @@ export default function AnalyticsView() {
           </p>
         </div>
         <div className="flex justify-end">
-        <div className="flex flex-wrap gap-[10px]">
-          <div className="flex flex-wrap">
-            <div className="flex">
-              <div className="flex flex-wrap gap-x-2">
-                <div className="w-[20px] h-[20px] bg-black rounded-[4px]"></div>
-                <p>zkSync</p>
+          <div className="flex flex-wrap gap-[10px]">
+            <div className="flex flex-wrap">
+              <div className="flex">
+                <div className="flex flex-wrap gap-x-2">
+                  <div className="w-[20px] h-[20px] bg-black rounded-[4px]"></div>
+                  <p>zkSync</p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="flex flex-wrap gap-x-2">
+                  <div className="w-[20px] h-[20px] bg-purple rounded-[4px]"></div>
+                  <p>Ethereum</p>
+                </div>
               </div>
             </div>
-            <div className="flex">
-              <div className="flex flex-wrap gap-x-2">
-                <div className="w-[20px] h-[20px] bg-purple rounded-[4px]"></div>
-                <p>Ethereum</p>
-              </div>
+            <div className="flex-1 w-[500px] mt-10 md:mt-auto">
+              <ul className="flex basis-1/3 w-full border border-solid border-black">
+                <li
+                  className="h-8 md:h-[64px]"
+                  style={{ background: "rgb(0, 0, 0)", width: "94.3291%" }}
+                ></li>
+                <li
+                  className="h-8 md:h-[64px]"
+                  style={{
+                    background: "rgb(135, 133, 255)",
+                    width: "5.67093%",
+                  }}
+                ></li>
+              </ul>
             </div>
           </div>
-          <div className="flex-1 w-[500px] mt-10 md:mt-auto">
-            <ul className="flex basis-1/3 w-full border border-solid border-black">
-              <li
-                className="h-8 md:h-[64px]"
-                style={{background:"rgb(0, 0, 0)", width: "94.3291%"}}
-              ></li>
-              <li
-                className="h-8 md:h-[64px]"
-                style={{background:"rgb(135, 133, 255)", width: "5.67093%"}}
-              ></li>
-            </ul>
-          </div>
-        </div>
         </div>
       </div>
+      <div className="bg-white">
+      <div className="px-[16px] py-[40px]">
+      <h2 className="text-start text-[32px]">Analytics</h2>
+      </div>
+      <div className="flex flex-wrap gap-[500px]">
+        <div className="w-2/12">
+          <BarChart width={500} height={550} data={data}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="pv" fill="#8884d8" />
+          </BarChart>
+        </div>
+        <div className="w-2/12">
+          <BarChart width={500} height={550} data={data}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="pv" fill="#8884d8" />
+          </BarChart>
+        </div>          
+      </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }

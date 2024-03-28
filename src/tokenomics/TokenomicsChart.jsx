@@ -66,7 +66,7 @@ export default function TokenomicsChart() {
             >
               <div className="w-[12px] h-[49px] bg-blue1 rounded-[2px]"></div>
               <div
-                className="w-[68px] h-[49px] gap-[5px] flex flex-col"
+                className="w-[68px] h-[49px] gap-[5px] flex flex-wrap"
                 style={{ border: "solid 1px red" }}
               >
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">
@@ -81,7 +81,7 @@ export default function TokenomicsChart() {
             >
               <div className="w-[12px] h-[49px] bg-[#8D75ED] rounded-[2px]"></div>
               <div
-                className="w-[68px] h-[49px] gap-[5px] flex flex-col"
+                className="w-[68px] h-[49px] gap-[5px] flex flex-wrap"
                 style={{ border: "solid 1px red" }}
               >
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">
@@ -96,7 +96,7 @@ export default function TokenomicsChart() {
             >
               <div className="w-[12px] h-[49px] bg-[#FF679E] rounded-[2px]"></div>
               <div
-                className="w-[68px] h-[49px] gap-[5px] flex flex-col"
+                className="w-[68px] h-[49px] gap-[5px] flex flex-wrap"
                 style={{ border: "solid 1px red" }}
               >
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">
@@ -111,7 +111,7 @@ export default function TokenomicsChart() {
             >
               <div className="w-[12px] h-[49px] bg-blue1 rounded-[2px]"></div>
               <div
-                className="w-[68px] h-[49px] gap-[5px] flex flex-col"
+                className="w-[68px] h-[49px] gap-[5px] flex flex-wrap"
                 style={{ border: "solid 1px red" }}
               >
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">
@@ -126,7 +126,7 @@ export default function TokenomicsChart() {
             >
               <div className="w-[12px] h-[49px] bg-[#42CA80] rounded-[2px]"></div>
               <div
-                className="w-[68px] h-[49px] gap-[5px] flex flex-col"
+                className="w-[68px] h-[49px] gap-[5px] flex flex-wrap"
                 style={{ border: "solid 1px red" }}
               >
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">
@@ -141,7 +141,7 @@ export default function TokenomicsChart() {
             >
               <div className="w-[12px] h-[49px] bg-[#F7BD27] rounded-[2px]"></div>
               <div
-                className="w-[68px] h-[49px] gap-[5px] flex flex-col"
+                className="w-[68px] h-[49px] gap-[5px] flex flex-wrap"
                 style={{ border: "solid 1px red" }}
               >
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">
@@ -156,7 +156,7 @@ export default function TokenomicsChart() {
             >
               <div className="w-[12px] h-[49px] bg-black rounded-[2px]"></div>
               <div
-                className="w-[68px] h-[49px] gap-[5px] flex flex-col"
+                className="w-[68px] h-[49px] gap-[5px] flex flex-wrap"
                 style={{ border: "solid 1px red" }}
               >
                 <p className="text-gray9 text-[14px] leading-[20px] font-bold whitespace-nowrap h-[2px]">

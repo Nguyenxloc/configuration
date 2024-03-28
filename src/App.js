@@ -26,7 +26,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="justify-center">
+        <div className="justify-center">
             <BannerView/>
             <ChainLstView/>
             <AutoAirServiceDesktop/>
@@ -38,10 +38,10 @@ export class App extends Component {
             <RoadMapTime/>
             <FaqsView/>
             <Footer/>
-        </div> */}
-        <div className="flex justify-center ms-[30px] h-fit">
-            <AnalyticsView/>
         </div>
+        {/* <div className="flex justify-center ms-[30px] h-fit">
+            <AnalyticsView/>
+        </div> */}
       </div>
     );
   }
