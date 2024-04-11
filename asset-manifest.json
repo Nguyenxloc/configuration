@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/autoair/static/css/main.4ec5798a.css",
-    "main.js": "/autoair/static/js/main.3d5e3894.js",
+    "main.css": "/autoair/static/css/main.e0999e39.css",
+    "main.js": "/autoair/static/js/main.ac75c267.js",
     "static/js/787.7dd34774.chunk.js": "/autoair/static/js/787.7dd34774.chunk.js",
     "index.html": "/autoair/index.html",
-    "main.4ec5798a.css.map": "/autoair/static/css/main.4ec5798a.css.map",
-    "main.3d5e3894.js.map": "/autoair/static/js/main.3d5e3894.js.map",
+    "main.e0999e39.css.map": "/autoair/static/css/main.e0999e39.css.map",
+    "main.ac75c267.js.map": "/autoair/static/js/main.ac75c267.js.map",
     "787.7dd34774.chunk.js.map": "/autoair/static/js/787.7dd34774.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ec5798a.css",
-    "static/js/main.3d5e3894.js"
+    "static/css/main.e0999e39.css",
+    "static/js/main.ac75c267.js"
   ]
 }
