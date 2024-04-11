@@ -11,7 +11,7 @@ export default function Navbar(){
          console.log("data fetch: ", data);
     }
     return(
-        <div className="" style={{border:"1px solid red"}}>
+        <div className="">
             <p>Navbar</p>
         </div>
     )

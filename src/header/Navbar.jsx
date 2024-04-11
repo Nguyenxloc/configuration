@@ -12,9 +12,8 @@ export default function Navbar() {
     <div className="py-[7px] px-[16px] h-[56px] w-6/12 bg-white rounded-tr-[20px] rounded-bl-[20px]">
       <div
         className=" flex"
-        style={{ border: "solid red 1px" }}
       >
-        <div className="flex" style={{ border: "red solid 1px" }}>
+        <div className="flex">
           <img
             className="ms-[20px]"
             width={28}
@@ -24,7 +23,7 @@ export default function Navbar() {
           />
           <p className="font-bold">AutoAir AI</p>
         </div>
-        <div className="flex" style={{ border: "solid red 1px" }}>
+        <div className="flex">
           <ul className="flex gap-[25px] text-gray7 font-semibold">
             <li>
               <button>Introduction</button>
@@ -45,7 +44,6 @@ export default function Navbar() {
         </div>
         <div
           className="w-[121px] h-[40px] ms-[60px] bg-black7 rounded-4"
-          style={{ border: "solid red 1px" }}
         ></div>
       </div>
     </div>

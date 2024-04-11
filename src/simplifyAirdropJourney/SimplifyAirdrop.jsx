@@ -19,7 +19,7 @@ export default function SimplifyAirdrop() {
           </p>
         </div>
         <div className="lg:flex divide-x divide-gray10">
-          <div className="lg:w-6/12 md:w-12/12 md:rounded-[20px] md:bg-white h-[552px]" style={{border:"solid red 1px"}}>
+          <div className="lg:w-6/12 md:w-12/12 md:rounded-[20px] md:bg-white h-[552px]">
             <div>
               <div className="flex justify-end">
               <div className="w-[320px] h-[52px] bg-gray10 rounded-l-full flex font-medium text-[20px] ms-[180px]">
@@ -107,7 +107,7 @@ export default function SimplifyAirdrop() {
               </div>
             </div>
           </div>
-          <div className="lg:w-6/12 md:w-12/12 md:rounded-[20px] md:bg-white h-[552px]" style={{border:"solid red 1px"}}>
+          <div className="lg:w-6/12 md:w-12/12 md:rounded-[20px] md:bg-white h-[552px]">
             <div className="">
               <div className="w-[320px] h-[52px] bg-black rounded-r-full flex text-white font-medium text-[20px] ">
                 <p className="ms-[70px] mt-[10px]">Premium Tier</p>

@@ -102,7 +102,6 @@ export default function CardChainLst() {
   return (
     <div
       className="grid grid-cols-2 gap-[24px] gap-[8px] h-fit"
-      style={{ border: "solid red 1px" }}
     >
       {data.map((item, index) => {
         return (
@@ -115,7 +114,7 @@ export default function CardChainLst() {
                 {item.tittle}
               </p>
             </div>
-            <div className=" flex gap-[8px] flex-wrap" style={{border:"1px solid red"}}>
+            <div className=" flex gap-[8px] flex-wrap">
               {item.platform.map((plf, index) => {
                 return (
                   <div className="h-[48px] gap-[8px] px-[20px] py-[10px] rounded-full bg-[#0000000D] flex flex-wrap">

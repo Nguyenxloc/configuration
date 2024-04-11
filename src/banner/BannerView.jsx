@@ -8,17 +8,14 @@ import Navbar from "header/Navbar";
 export default function BannerView() {
     const [data, setData] = useState([]);
     return (
-        <div className="video-container" style={{border:"solid red 1px"}}>
+        <div className="video-container">
             <video autoPlay muted loop>
                 <source src="https://autoair.xyz/video/bg2.mp4" type="video/mp4" />
             </video>
-            <div className="ms-5 flex justify-center">
-                <Navbar/>
-            </div>
-            <div className="mt-[100px] flex justify-center" style={{ border: "solid red  1px" }}>
+            <div className="mt-[100px] flex justify-center">
                 <Content />
             </div>
-            <div className="mt-[100px] flex justify-center" style={{ border: "solid red 1px" }}>
+            <div className="mt-[100px] flex justify-center">
                 <MeetAAITeleBtn />
             </div>
             <div className="mt-[215px]">

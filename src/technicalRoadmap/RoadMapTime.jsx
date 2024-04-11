@@ -7,13 +7,12 @@ export default function () {
       <div className="flex gap-[20px]">
         <div
           className="w-2/12 h-[3494px]"
-          style={{ border: "solid 1px black" }}
         >
           <div className="text-[40px] p-[12px] border border-black w-fit h-fit rounded-[12px] font-medium">
             <span>Q1</span>
           </div>
         </div>
-        <div className="w-9/12" style={{ border: "1px red solid" }}>
+        <div className="w-9/12">
           <div>
             <h3 className="text-[48px] text-medium">AutoAir AI Bot</h3>
             <p className="text-[28px] leading-[28px] font-medium">
@@ -23,7 +22,6 @@ export default function () {
           </div>
           <div
             className="w-12/12  pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] gap-[12px] flex">
@@ -67,7 +65,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] gap-[12px] flex">
@@ -111,7 +108,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] flex gap-[12px]">
@@ -155,7 +151,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] gap-[12px] flex">
@@ -199,7 +194,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] flex gap-[12px]">
@@ -243,7 +237,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] flex gap-[12px]">
@@ -287,7 +280,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] flex gap-[12px]">
@@ -331,7 +323,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] flex gap-[12px]">
@@ -373,7 +364,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] flex gap-[12px]">
@@ -417,7 +407,6 @@ export default function () {
           </div>
           <div
             className="w-12/12 pt-[24px]"
-            style={{ border: "solid 1px red" }}
           >
             <div className="flex gap-[12px]">
               <div className="rounded-full border border-black w-fit h-fit p-[4px] flex gap-[12px]">

@@ -20,9 +20,9 @@ export default function AppConfigPlainText() {
     )
     return (
         <pre className="w-fit flex">
-            <p className="text-start" style={{border:"1px solid red"}}>{dataString} </p>
+            <p className="text-start">{dataString} </p>
             <div className="">
-            <button onClick={() => { navigator.clipboard.writeText(dataString) }} className="bg-black1-500 hover:bg-blue-700 font-bold py-2 px-4 rounded" style={{border: "1px purple solid"}}>
+            <button onClick={() => { navigator.clipboard.writeText(dataString) }} className="bg-black1-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">
                 <p className="text-xl mt-2">Copy</p>
             </button>
             </div>

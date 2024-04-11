@@ -12,7 +12,7 @@ export default function HoldPaidAcross() {
     });
     return (
         <div className="bg-black7 text-white w-[1000px] h-[250px] flex rounded-4">
-            <div className="w-[212px] h-[212px] ms-[70px] mb-[50px]" style={{ border: "solid 2px red" }} >
+            <div className="w-[212px] h-[212px] ms-[70px] mb-[50px]" >
                 <p></p>
                 <p></p>
                 <p></p>

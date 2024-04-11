@@ -23,7 +23,7 @@ export default function App324plainText() {
             <p className="text-start">{dataString}</p>
             <div>
             <button onClick={() => { navigator.clipboard.writeText(dataString) }} className="bg-pink-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">
-                <p style={{border:"solid 1px red"}} className="text-xl">Copy</p>
+                <p className="text-xl">Copy</p>
             </button>
             </div>
         </pre>

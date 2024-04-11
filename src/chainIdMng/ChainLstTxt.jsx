@@ -10,7 +10,7 @@ export default function ChainLstTxt() {
                     <span>By</span>
                     <div className="w-[335px] h-[68px] inline-flex rounded-[12px] px-[5px] bg-black">
                         <img src="https://autoair.xyz/logo/logo-white.svg" width={65} height={39} alt="" />
-                        <p className="text-[45px] text-white text-center" style={{border:"1px solid red"}}>AutoAir AI</p>
+                        <p className="text-[45px] text-white text-center" >AutoAir AI</p>
                     </div>
                     </div> 
                 </div>

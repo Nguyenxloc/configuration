@@ -78,7 +78,6 @@ export default function AnalyticsView() {
       <div className="flex justify-center mb-[56px]">
         <div
           className="w-7/12 text-[32px] font-medium text flex justify-center"
-          style={{ border: "solid red 1px" }}
         >
           AutoAir is an airdrop farming Telegram bot that leverages AI to
           streamline the process. By analyzing historical data, it tailors
@@ -86,25 +85,22 @@ export default function AnalyticsView() {
           access.
         </div>
       </div>
-      <div className="p-[40px] bg-white" style={{ border: "1px solid red" }}>
+      <div className="p-[40px] bg-white">
         <div className="flex flex-col gap-[16px]">
           <div className="flex text-[32px] font-medium">Overview</div>
           <div className="flex gap-[10px]">
             <div
               className="px-[20px] py-[10px] rounded-full"
-              style={{ border: "1px red solid" }}
             >
               Today
             </div>
             <div
               className="px-[20px] py-[10px] rounded-full"
-              style={{ border: "1px red solid" }}
             >
               Week
             </div>
             <div
               className="px-[20px] py-[10px] rounded-full"
-              style={{ border: "1px red solid" }}
             >
               Month
             </div>
@@ -114,7 +110,6 @@ export default function AnalyticsView() {
       <div className="flex bg-white mt-[20px]">
         <div
           className="gap-[10px] h-[296px] w-4/12 py-[60px]"
-          style={{ border: "1px red solid" }}
         >
           <h2 className="text-start text-[24px]">Wallets Created</h2>
           <div className="flex gap-[20px]">
@@ -124,7 +119,6 @@ export default function AnalyticsView() {
         </div>
         <div
           className="gap-[10px] h-[296px] w-4/12 py-[60px]"
-          style={{ border: "1px red solid" }}
         >
           <h2 className="text-start text-[24px]">Wallets Created</h2>
           <div className="flex gap-[20px]">
@@ -134,7 +128,6 @@ export default function AnalyticsView() {
         </div>
         <div
           className="gap-[10px] h-[296px] w-4/12 py-[60px]"
-          style={{ border: "1px red solid" }}
         >
           <h2 className="text-start text-[24px]">Wallets Created</h2>
           <div className="flex gap-[20px]">

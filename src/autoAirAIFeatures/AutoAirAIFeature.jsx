@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AutoAirAIFeature() {
   return (
-    <div>
+    <div className="ms-[150px]">
       <div className="flex flex-wrap gap-[40px] text-start">
         <p className="text-[80px] w-3/12">AutoAir AI Features</p>
         <div className="w-7/12">
